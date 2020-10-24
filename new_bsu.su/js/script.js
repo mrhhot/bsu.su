@@ -1,3 +1,22 @@
+// MENU BURGER
+
+$(document).ready(function () {
+    $('.menu__icon').click(function (event) {
+        $('.menu__icon, .menu__body').toggleClass('active_burger');
+        $('body').toggleClass('lock')
+    });
+});
+
+/* ЗАКРЫТИЕ МЕНЮ ПО ТАПУ В ЛЮБОМ МЕСТЕ
+
+$('.header__list').click(function(event) {
+        $('.header__burger,.header__menu').removeClass('active');
+        $('body').removeClass('lock');}
+*/
+
+
+// SLIDER
+
 $(document).ready(function () {
     $('.slider').slick({
         dots: true,

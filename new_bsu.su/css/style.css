@@ -53,15 +53,9 @@ h3 {
   font-family: Montserrat, sans-serif;
   font-size: 36px;
   font-weight: bold;
+  line-height: 1;
   color: #696969;
 }
-
-/* *********** <MEDIA> *********** */
-
-
-
-/* *********** </ MEDIA> *********** */
-
 
 /* ***********ПОДКЛЮЧАЕМ ШРИФТ ИКОНОК*********** */
 
@@ -70,7 +64,6 @@ h3 {
   src:  url('fonts/icomoon.eot?bsxuo');
   src:  url('fonts/icomoon.eot?bsxuo#iefix') format('embedded-opentype'),
     url('../fonts/icomoon.ttf') format('truetype'),
-    url('../fonts/icomoon.woff') format('woff'),
     url('../fonts/icomoon.svg') format('svg');
   font-weight: normal;
   font-style: normal;
@@ -123,27 +116,127 @@ body {
     width: 80%;
 }
 
+/* *********** <@MEDIA> *********** */
+
+@media (max-width:1365px) {
+
+  body.lock {
+    overflow: hidden;
+  }
+
+  .menu__icon {
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 20px;
+    z-index: 99;
+  }
+
+  .menu__icon:before,
+  .menu__icon:after {
+    content: '';
+    background-color: #ebebeb;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0;
+    transition: all .3s ease 0s;
+  }
+
+  .menu__icon span {
+    position: absolute;
+    background-color: #ebebeb;
+    width: 100%;
+    top: 9px;
+    left: 0;
+    height: 2px;
+    transition: all .3s ease 0s;
+  }
+
+  .menu__icon:before {
+    top: 0;      
+  }
+  .menu__icon:after {
+    bottom: 0;
+  }
+
+  .menu__body {
+    position: fixed;
+    margin-top: 6%;
+    right: -100%;
+    top: 0;
+    width: 100%;
+    background-color: #696969;
+    z-index: 90;
+    width: 30%;
+    transition: all .8s ease 0.2s;
+    border-radius: 7% 0 0 7%;
+  }
+
+  .menu__body.active_burger {
+    right: 0;
+    transition: all .6s ease 0s;
+  }
+
+  .menu__list {
+    flex-direction: column;
+    justify-content: center;
+    margin: 5% 0 5% 5%;
+
+  }
+
+  .menu__body ul {
+    display: block;
+  }
+
+  .side-bar {
+    display: none;
+  }
+
+  .wrapper {
+    width: 90%;
+  }
+
+}
+
+/* *********** </ @MEDIA> *********** */
+
 /* ***********<HEADER> */
 
+  .header {
+    position: fixed;
+    max-width: 100%;
+    width: 100%;
+    z-index: 99;
+  }
+
+  .header:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #696969;
+    z-index: 91;
+  }
 
   .header__container {
-    position: fixed;
+    position: relative;
     display: flex;
     width: 100%;
-    max-width: 100%;
     height: 50px;
-    background-color: #696969;
     justify-content: space-evenly;
     align-items: center;
-    z-index: 100;
-
   }
 
   .header__logo {
+    position: relative;
+    z-index: 99;
   }
+
   .header-title {
     height: 44px;
-    object-fit: contain;
     font-family: Montserrat, sans-serif;
     font-size: 36px;
     font-weight: bold;
@@ -153,6 +246,7 @@ body {
   .header__action {
     display: flex;
     align-items: center;
+    z-index: 99;
   }
   .header__action a{
     color: #ebebeb;
@@ -192,35 +286,39 @@ body {
   .b24-web-form-popup-btn-10 {
   }
   .header__menu {
+    display: flex;
+    align-items: center;
   }
   .menu {
   }
-  .menu__icon {
+  
+  .menu__icon.active_burger span{
+    transform: scale(0);
   }
+
+  .menu__icon.active_burger:before {
+    transform: rotate(45deg);
+    top: 9px;
+  }
+
+  .menu__icon.active_burger:after {
+    transform: rotate(-45deg);
+    bottom: 9px;
+  }
+
   .icon-menu {
   }
 
   .menu__body {
   }
-
-  .burger {
-    height: 30px;
-    display: none;
-  }
-
-  @media (max-width:1024px) {
-    .burger {
-      display: block;
-    }
-  }
-
   .menu__list {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    width: 400px;      
+    width: 450px;      
     color: #ebebeb;
-
+    z-index: 92;
   }
 
   .menu__list li{
@@ -533,11 +631,12 @@ body {
 .slider {
   position: relative;
   padding: 0 200px;
+  z-index: 7;
 }
 
 .slider__item img {
   max-width: 100%;
-  width: 70%;
+  width: 60%;
 }
 
 .slider .slick-arrow {
@@ -601,7 +700,7 @@ body {
 
 .slider-mini__item img {
     max-width: 100%;
-
+    width: 40%;
 }
 
 .slider-mini__item {
