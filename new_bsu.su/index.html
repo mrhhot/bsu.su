@@ -81,6 +81,22 @@
                                 <li><a href="#product" class="menu__link">Бетонные заводы</a></li>
                             </ul>
                         </li>
+                        <ul class="product__list">
+                            <li class="product__list-items"><a href="#bsu-60" class="product__items">БСУ 60</a>
+                            </li>
+                            <li class="product__list-items"><a href="#bsu-90" class="product__items">БСУ 90</a>
+                            </li>
+                            <li class="product__list-items"><a href="#bsu-120" class="product__items">БСУ
+                                    120</a>
+                            </li>
+                            <li class="product__list-items"><a href="#bsu-180" class="product__items">БСУ
+                                    180</a>
+                            </li>
+                            <li class="product__list-items"><a href="#bsu-240" class="product__items">БСУ
+                                    240</a>
+                            </li>
+                        </ul>
+
                         <li><span class="icon-icon_about"></span>
                             <ul class="sub-menu__list">
                                 <li><a href="#about" class="menu__link">О компании</a></li>
@@ -96,7 +112,51 @@
                                 <li><a href="#contact" class="menu__link">Контакты</a></li>
                             </ul>
                         </li>
+                        <div class="header__action-sidemenu">
+                            <div class="header__action-phone">
+                                <div class="phone-ico">
+                                    <img src="img/icon/menu/icon_phone.svg" alt="">
+                                </div>
+                                <div class="phone-text">
+                                    <a href="tel:+79055554679">+7 (905) 555-46-79</a>
+                                </div>
+                            </div>
+                            <div class="header__action-mail">
+                                <div class="mail-ico">
+                                    <img src="img//icon/menu/icon_mail.svg" alt="">
+                                </div>
+                                <div class="mail-text">
+                                    <a href="mailto:ooovibroform@gmail.com">ooovibroform@gmail.com</a>
+                                </div>
+                            </div>
+                            <div class="header__action-callback">
+                                <div class="callback-ico">
+                                    <img src="img/icon/menu/icon_callback.svg" alt="">
+                                </div>
+                                <div class="callback-text">
+                                    <script id="bx24_form_button" data-skip-moving="true">
+                                        (function (w, d, u, b) {
+                                            w['Bitrix24FormObject'] = b; w[b] = w[b] || function () {
+                                                arguments[0].ref = u;
+                                                (w[b].forms = w[b].forms || []).push(arguments[0])
+                                            };
+                                            if (w[b]['forms']) return;
+                                            var s = d.createElement('script'); s.async = 1; s.src = u + '?' + (1 * new Date());
+                                            var h = d.getElementsByTagName('script')[0]; h.parentNode.insertBefore(s, h);
+                                        })(window, document, 'https://b24-mfzzrb.bitrix24.ru/bitrix/js/crm/form_loader.js', 'b24form');
+                                        b24form({ "id": "10", "lang": "ru", "sec": "7owjhu", "type": "button", "click": "" });
+                                    </script><button class="callback__button"
+                                        style="color: #ebebeb; background-color: #696969; font-family: 'Roboto', sans-serif; font-size: 14px; "
+                                        class="b24-web-form-popup-btn-10">
+                                        <p>Мы перезвоним
+                                            Вам</p>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
                     </ul>
+
                 </nav>
             </div>
         </div>
@@ -231,10 +291,16 @@
                 </div>
                 <div class="bsu__content">
                     <div class="bsu__text">
+                        <div class="bsu__tabs">
+                            <nav class="tabs__items">
+                                <a href="#disc60" class="tabs__item60">Описание</a>
+                                <a href="#params60" class="tabs__item60">Характеристики</a>
+                            </nav>
+                        </div>
                         <div class="bsu__subtitle">
                             <h2>Описание:</h2>
                         </div>
-                        <div class="bsu__disc">
+                        <div class="bsu__disc" id="disc60">
                             <p>БСУ-60 стационарный бетонный завод с производительностью до 60 м3/ч. В
                                 зависимости от
                                 проекта
@@ -292,7 +358,7 @@
                             <div class="bsu__teh_subtitle">
                                 <h3>Технические характеристики:</h3>
                             </div>
-                            <div class="bsu__teh_table">
+                            <div class="bsu__teh_table" id="params60">
                                 <table class="table_teh">
                                     <tr>
                                         <td>Производительность по товарному бетону (паспортная)</td>
@@ -413,10 +479,17 @@
                 </div>
                 <div class="bsu__content">
                     <div class="bsu__text">
+                        <div class="bsu__tabs">
+                            <nav class="tabs__items">
+                                <a href="#disc90" class="tabs__item90">Описание</a>
+                                <a href="#params90" class="tabs__item90">Характеристики</a>
+                            </nav>
+                        </div>
+
                         <div class="bsu__subtitle">
                             <h2>Описание:</h2>
                         </div>
-                        <div class="bsu__disc">
+                        <div class="bsu__disc" id="disc90">
                             <p>БСУ-90 стационарный бетонный завод с производительностью до 90 м3/ч. В
                                 зависимости от
                                 проекта может быть укомплектован
@@ -461,7 +534,7 @@
                             <div class="bsu__teh_subtitle">
                                 <h3>Технические характеристики:</h3>
                             </div>
-                            <div class="bsu__teh_table">
+                            <div class="bsu__teh_table" id="params90">
                                 <table class="table_teh">
                                     <tr>
                                         <td>Производительность по товарному бетону (паспортная)</td>
@@ -578,10 +651,17 @@
                 </div>
                 <div class="bsu__content">
                     <div class="bsu__text">
+                        <div class="bsu__tabs">
+                            <nav class="tabs__items">
+                                <a href="#disc120" class="tabs__item120">Описание</a>
+                                <a href="#params120" class="tabs__item120">Характеристики</a>
+                            </nav>
+                        </div>
+
                         <div class="bsu__subtitle">
                             <h2>Описание:</h2>
                         </div>
-                        <div class="bsu__disc">
+                        <div class="bsu__disc" id="disc120">
                             <p>БСУ-СT-120 стационарный бетонный завод с производительностью до 120 м3/ч. В
                                 зависимости
                                 от проекта может быть укомплектован
@@ -628,7 +708,7 @@
                             <div class="bsu__teh_subtitle">
                                 <h3>Технические характеристики:</h3>
                             </div>
-                            <div class="bsu__teh_table">
+                            <div class="bsu__teh_table" id="params120">
                                 <table class="table_teh">
                                     <tr>
                                         <td>Производительность по товарному бетону (паспортная)</td>
@@ -746,10 +826,17 @@
                 </div>
                 <div class="bsu__content">
                     <div class="bsu__text">
+                        <div class="bsu__tabs">
+                            <nav class="tabs__items">
+                                <a href="#disc180" class="tabs__item180">Описание</a>
+                                <a href="#params180" class="tabs__item180">Характеристики</a>
+                            </nav>
+                        </div>
+
                         <div class="bsu__subtitle">
                             <h2>Описание:</h2>
                         </div>
-                        <div class="bsu__disc">
+                        <div class="bsu__disc" id="disc180">
                             <p>БСУ-СT-180 стационарный бетонный завод с производительностью до 180 м3/ч. В
                                 зависимости
                                 от проекта может быть укомплектован двумя бетоносмесителями 2 х БП-1500К на
@@ -795,7 +882,7 @@
                             <div class="bsu__teh_subtitle">
                                 <h3>Технические характеристики:</h3>
                             </div>
-                            <div class="bsu__teh_table">
+                            <div class="bsu__teh_table" id="params180">
                                 <table class="table_teh">
                                     <tr>
                                         <td>Производительность по товарному бетону (паспортная)</td>
@@ -915,10 +1002,17 @@
                 </div>
                 <div class="bsu__content">
                     <div class="bsu__text">
+                        <div class="bsu__tabs">
+                            <nav class="tabs__items">
+                                <a href="#disc240" class="tabs__item240">Описание</a>
+                                <a href="#params240" class="tabs__item240">Характеристики</a>
+                            </nav>
+                        </div>
+
                         <div class="bsu__subtitle">
                             <h2>Описание:</h2>
                         </div>
-                        <div class="bsu__disc">
+                        <div class="bsu__disc" id="disc240">
                             <p>БСУ-240 стационарный бетонный завод с производительностью до 240 м3/ч. В
                                 зависимости
                                 от проекта может быть укомплектован двумя бетоносмесителями БП-2000К на
@@ -964,7 +1058,7 @@
                             <div class="bsu__teh_subtitle">
                                 <h3>Технические характеристики:</h3>
                             </div>
-                            <div class="bsu__teh_table">
+                            <div class="bsu__teh_table" id="params240">
                                 <table class="table_teh">
                                     <tr>
                                         <td>Производительность по товарному бетону (паспортная)</td>
@@ -1387,11 +1481,11 @@
             <nav class="footer__menu">
                 <ul class="footer__list">
                     <li><a href="/#main.html" class="footer__link">Главная</a></a></li>
-                    <li><a href="/#product.html" class="footer__link">БСУ 60</a></li>
-                    <li><a href="/#product.html" class="footer__link">БСУ 90</a></li>
-                    <li><a href="/#product.html" class="footer__link">БСУ 120</a></li>
-                    <li><a href="/#product.html" class="footer__link">БСУ 180</a></li>
-                    <li><a href="/#product.html" class="footer__link">БСУ 240</a></li>
+                    <li><a href="/#bsu-60" class="footer__link">БСУ 60</a></li>
+                    <li><a href="/#bsu-90" class="footer__link">БСУ 90</a></li>
+                    <li><a href="/#bsu-120" class="footer__link">БСУ 120</a></li>
+                    <li><a href="/#bsu-180" class="footer__link">БСУ 180</a></li>
+                    <li><a href="/#bsu-240" class="footer__link">БСУ 240</a></li>
                     <li><a href="/#product.html" class="footer__link">О компании</a></li>
                     <li><a href="/#gallery.html" class="footer__link">Галерея</a></li>
                     <li><a href="/#contact.html" class="footer__link">Контакты</a></li>
