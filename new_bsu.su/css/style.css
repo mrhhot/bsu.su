@@ -747,6 +747,7 @@ body {
   box-shadow: 2px 4px 10px 0 rgba(0, 0, 0, 0.25);
   border: solid 1px #696969;
   overflow: hidden;
+  margin-bottom: 30px;
 }
 
 /* </ ********</ CONTACT >******** */
@@ -789,17 +790,6 @@ body {
   display: flex;
   justify-content: space-around;
   width: 80px;
-}
-
-.footer__logo-yandex {
-}
-.yandex {
-}
-.footer__logo-facebook {
-}
-.facebook {
-}
-.footer__text-text {
 }
 
 /* </ ********</ FOOTER >******** */
